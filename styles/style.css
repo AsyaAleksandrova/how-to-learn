@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /*-------------Header-------------------*/
@@ -21,11 +21,11 @@
   overflow: hidden;
 }
 
-.logo{
+.logo {
   width: 183px;
   height: 32px;
-} 
-.logo_place_header{
+}
+.logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
@@ -33,7 +33,7 @@
 }
 .header__title {
   align-self: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   display: inline-block;
   width: 730px;
   font-size: 102px;
@@ -43,9 +43,10 @@
 }
 .header__subtitle {
   position: absolute;
+  left: 64px;
+  bottom: 30px;
   align-self: flex-end;
-  margin-left: 64px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   display: inline-block;
   width: 388px;
   font-size: 18px;
@@ -72,27 +73,27 @@
   top: 64px;
   right: 0;
 
-/*-------------Поворот треугольника-нужен???????---------*/
+  /*-------------Поворот треугольника-нужен???????
 
   animation-name: rotation;
   animation-duration: 30s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear;---------*/
 }
-@keyframes rotation {
-    0% {
-        transform:rotate(0deg);
-    }
-    100% {
-        transform:rotate(360deg);
-    }
-}
+/*@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}----------*/
 
 /*-----------Главные проблемы в обучении---------*/
 
 .description {
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .two-columns {
   width: 80%;
@@ -107,7 +108,7 @@
   width: 175px;
   color: #2f80ed;
   font-weight: normal;
-  margin-right: 5%;
+  margin: 0;
 }
 .two-columns__main-text {
   display: flex;
@@ -121,6 +122,11 @@
   line-height: 34px;
   font-size: 24px;
 }
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
 .two-columns__span-accent {
   font-weight: bold;
 }
@@ -130,7 +136,7 @@
 .digits {
   margin-bottom: 100px;
 }
-.digits__title {
+.section__title {
   display: block;
   width: 60%;
   line-height: 1.15;
@@ -139,7 +145,7 @@
   text-align: center;
   margin: 0 auto 20px;
 }
-.digits__subtitle {
+.section__subtitle {
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -153,6 +159,7 @@
   flex-wrap: wrap;
   width: 1100px;
   margin: 0 auto;
+  padding-left: 0;
   justify-content: space-between;
   align-items: stretch;
 }
@@ -177,7 +184,7 @@
 
 /*------------------Метод Фейнмана-----------------*/
 .feynman {
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -232,26 +239,16 @@
   overflow: hidden;
 }
 
-.kaufman__title {
+.section__title_theme_dark {
   color: white;
-  display: block;
-  width: 60%;
   margin: 0 auto;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
+  z-index: 2;
 }
 
-.kaufman__subtitle {
+.section__subtitle-theme_dark {
   color: white;
-  display: block;
-  width: 60%;
   margin: 20px auto 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
+  z-index: 2;
 }
 .table__cell_theme_dark {
   color: white;
@@ -274,6 +271,7 @@
 }
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   right: -210px;
   top: 0;
@@ -296,11 +294,19 @@
   width: 90%;
   margin: 0 auto;
 }
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
+}
+.footer__column_content_info {
+  justify-content: flex-start;
+}
+.footer__column_content_social {
+  justify-content: flex-start;
 }
 .logo_place_footer {
   width: 183px;
@@ -313,10 +319,7 @@
   font-size: 18px;
   font-weight: normal;
 }
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-}
+
 .footer__column-heading {
   color: white;
   line-height: 30px;
@@ -333,13 +336,11 @@
   font-size: 18px;
   font-weight: normal;
 }
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
-.footer__social-link {
+.footer__column-link {
   text-decoration: none;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 .footer__social-icon {
   height: 16px;
