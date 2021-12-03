@@ -237,6 +237,7 @@
   padding-bottom: 90px;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .section__title_theme_dark {
@@ -277,8 +278,7 @@
   top: 0;
   width: 877px;
   height: 877px;
-  overflow: hidden;
-  z-index: 0;
+  z-index: -1;
 }
 
 /*-----------Footer-----------*/
