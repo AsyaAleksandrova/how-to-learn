@@ -136,7 +136,7 @@
 .digits {
   margin-bottom: 100px;
 }
-.section__title {
+.section-title {
   display: block;
   width: 60%;
   line-height: 1.15;
@@ -145,7 +145,7 @@
   text-align: center;
   margin: 0 auto 20px;
 }
-.section__subtitle {
+.section-subtitle {
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -240,13 +240,13 @@
   z-index: 0;
 }
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   color: white;
   margin: 0 auto;
   z-index: 2;
 }
 
-.section__subtitle-theme_dark {
+.section-subtitle-theme_dark {
   color: white;
   margin: 20px auto 0;
   z-index: 2;
