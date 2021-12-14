@@ -2,6 +2,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin: 0 auto;
   display: inline-block;
