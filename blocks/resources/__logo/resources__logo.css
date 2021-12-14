@@ -2,3 +2,11 @@
   width: 279px;
   height: 38px;
 }
+
+.resources__logo:hover {
+  box-shadow: 1px 3px 5px #d8d7d7;
+}
+
+.resources__logo:active {
+  box-shadow: 1px 7px 7px #d8d7d7;
+}
