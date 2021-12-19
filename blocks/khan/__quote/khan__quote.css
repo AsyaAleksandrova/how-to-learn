@@ -2,6 +2,7 @@
   width: 790px;
   display: inline-block;
   margin: 50px 0 36px;
-  text-align: left;
   quotes: none;
+  line-height: 34px;
+  font-size: 24px;
 }

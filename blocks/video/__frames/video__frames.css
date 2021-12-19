@@ -1,13 +1,14 @@
 .video__frames {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
   margin: 50px auto -50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  list-style-type: none;
+  gap: 20px;
 }

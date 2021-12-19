@@ -4,5 +4,9 @@
   right: 0;
   max-width: 765px;
   max-height: 608px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }

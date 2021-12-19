@@ -7,6 +7,8 @@
   -webkit-transition: opacity 0.5s ease;
   -o-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 .khan__buy-link:hover {
   opacity: 0.6;
